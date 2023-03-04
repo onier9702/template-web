@@ -1,0 +1,16 @@
+<div class="card">
+	<div class="card-header">
+		<p class="text-center text-success"> {{data.msg | translate}} </p>
+	</div>
+	<div *ngIf="data.flags.length" class="card-body d-flex justify-content-center">
+		<ul class="list">
+			<span *ngFor="let flag of data.flags" class="{{flag}}"
+				  (click)="changeFlag(flag)"
+				  class="flag"
+			></span>
+		</ul>
+	</div>
+</div>
+
+
+

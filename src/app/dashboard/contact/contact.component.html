@@ -1,0 +1,55 @@
+
+
+<header class="d-flex justify-content-center">
+    <h1 class="header_title mt-5 mb-5">{{ 'app.contact.title' | translate }}</h1>
+</header>
+
+<main class="main_div">
+
+    <div class="div_img">
+        <img (click)="openImageModal('imgs/photoLinkedln.jpeg')" 
+            class="my_photo" src="../../../assets/imgs/photoLinkedln.jpeg" 
+            width="200px" height="90px" alt="tem-1">
+        <div class="h3_info_icon">
+            <h3 class="mt-2" style="color: #606c38">{{'app.contact.engineer' | translate}}</h3>
+            <div class="d-flex align-items-center">
+                <h3 class="mt-2" style="color: #606c38">{{'app.contact.web_developer' | translate}}</h3>
+                <i (click)="openCV()" style="margin-left: 6px; padding-bottom: 0px; color: #fca311; font-size: 1.4rem; cursor: pointer;" class="bi bi-info-circle"></i>
+            </div>
+        </div>
+        <section class="my_info">
+            <div class="" *ngFor="let item of data">
+                <div class="m-3">
+                    <i style="color: #fca311; font-size: 1.5rem; margin-right: 5px;" [class]="item.icon"></i> <span>{{ item.link }}</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="medias">
+        <div class="d-flex justify-content-center mt-4 pb-3">
+            <a href="https://www.instagram.com/oniercresteloojeda/" target="_blank">
+                <img style="cursor: pointer; margin-right: 15px;" src="../../../../assets/svg/square-instagram.svg" width="40px" height="40px" alt="inst">
+            </a>
+            <a href="https://www.linkedin.com/in/onier-crestelo-ojeda-513b23262" target="_blank">
+                <!-- <img style="cursor: pointer; margin-right: 15px;" src="../../../../assets/svg/linkedin.svg" width="40px" height="40px" alt="inst"> -->
+                <i class="fa-brands fa-linkedin" style="font-size: 2.5rem; color: #0077b6; margin-right: 15px;"></i>
+            </a>
+            <a href="https://github.com/onier9702" target="_blank">
+                <!-- <img style="cursor: pointer" src="../../../../assets/svg/github.svg" width="40px" height="40px" alt="inst"> -->
+                <i class="fa-brands fa-github mr-4" style="font-size: 2.5rem; color: #6c757d;"></i>
+            </a>
+            <!-- <a href="https://wa.me/message/UYJLE22XHH7UP1" target="_blank">
+                <img style="cursor: pointer" src="../../../../assets/svg/square-whatsapp.svg" width="40px" height="40px" alt="inst">
+            </a> -->
+        </div>
+    </section>
+    
+</main>
+
+<section class="btn_whatsapp">
+    <div class="cuadro">
+        <a href="https://wa.me/message/UYJLE22XHH7UP1" target="_blank"><i class="bi bi-whatsapp" id="icon-whatsapp"></i></a>
+    </div>
+</section>

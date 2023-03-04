@@ -1,0 +1,27 @@
+
+
+.main_div {
+    padding: 0px;
+    width: 100%;
+
+    .close_div {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 40px;
+        margin-bottom: 10px;
+        width: 100%;
+
+        #btn_close {
+            cursor: pointer;
+            color: #61a5c2;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            padding-top: 0px;
+            width: fit-content;
+        }
+    }
+
+    .price {
+        color: #fb8500;
+    }
+}

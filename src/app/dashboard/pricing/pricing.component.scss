@@ -1,0 +1,70 @@
+
+
+// Globals
+.header_title {
+    color: #283618;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: serif;
+    line-height: initial;
+    letter-spacing: 1px;
+    margin: 35px 0px;
+    text-align: center;
+}
+
+.small {
+    font-size: 20px;
+    font-family: fantasy;
+    line-height: 1.3;
+}
+
+.header_subtitle {
+    color: #606c38;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+
+// END Globals
+
+.main_div {
+    padding: 0px 20px;
+    width: 100%;
+
+    .table {
+        .row_table {
+            cursor: pointer;
+        }
+        .row_table:hover {
+            background-color: #edf2f4;
+        }
+    }
+
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    .btn_buy {
+        background-color: #fb8500;
+        border: 1px solid #000;
+        border-radius: 20px;
+        padding: 10px 18px;
+        width: 230px;
+    }
+    .btn_buy:hover {
+        background-color: #f5a140;
+    }
+}
+
+@media (min-width: 720px) {
+    .main_div {
+        padding: 0px 100px;
+    }
+}
+@media (min-width: 720px) {
+    .main_div {
+        padding: 0px 180px;
+    }
+}

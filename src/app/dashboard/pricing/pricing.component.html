@@ -1,0 +1,46 @@
+
+
+<header>
+    <h1 class="header_title">{{'app.pricing.header' | translate | titlecase}}</h1>
+</header>
+
+<section class="main_div mb-5">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th style="color: #fb8500;" scope="col">#</th>
+            <th style="color: #fb8500;" scope="col">{{'app.pricing.Name' | translate | titlecase}}</th>
+            <th style="color: #fb8500;" scope="col">{{'app.pricing.Complexity' | translate | titlecase}}</th>
+            <th style="color: #fb8500;" scope="col">{{'app.pricing.Cost' | translate | titlecase}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row_table" 
+            *ngFor="let item of dataTable, let i = index"
+            (click)="watchInfo(i)">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ item.name | translate }}</td>
+            <td>{{ item.complexity  | translate}}</td>
+            <td>${{ item.cost  | translate}}</td>
+          </tr>
+        </tbody>
+    </table>
+
+</section>
+  
+<section class="div_prices mt-5">
+
+    <section class="section_price" id="sec_1">
+        <!-- <h3 class="header_subtitle"></h3> -->
+        <app-carousel
+          [data]="arrCarouselImagesTemplate"
+          [widthMainDiv]="widthVariable"
+        ></app-carousel>
+    </section>
+
+</section>
+
+<section class="buy">
+  <button routerLink="/dashboard/payment" class="btn_buy">{{'app.pricing.btn_buy' | translate | titlecase}}</button>
+</section>

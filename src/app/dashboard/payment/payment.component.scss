@@ -1,0 +1,85 @@
+
+
+.main_div {
+
+    .background {  
+        background-image: url('../../../assets/imgs/payment/payment.png');   
+        background-repeat: no-repeat;
+        background-position: top;
+        height: 200px;
+
+        .header_title {
+            color: #1d3557;
+            padding: 20px 10px;
+            font-size: 18px;
+        }
+    }
+
+    .div_envolve_grid {
+        display: flex;
+        .grid_icons {
+            margin-left: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 105px);
+            gap: 14px;
+    
+            .grid {
+                border: 0.8px solid #000;
+                border-radius: 20px;
+                background-color: #f8f9fa;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                width: 100px;
+                
+                .icon {
+                    font-size: 2.5rem;
+                }
+            }
+            .grid:hover {
+                background-color: #e5e5e5;
+            }
+    
+            .grid:nth-child(1) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .grid:nth-child(2) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            .grid:nth-child(3) {
+                grid-column-start: 3;
+                grid-column-end: 4;
+            }
+            .grid:nth-child(4) {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+            .grid:nth-child(5) {
+                grid-column-start: 2;
+                grid-column-end: 3;
+            }
+            .grid:nth-child(6) {
+                grid-column-start: 3;
+                grid-column-end: 4;
+            }
+    
+        }
+    }
+
+}
+
+@media (min-width: 720px) {
+    .background {
+        .header_title {
+            text-align: center;
+        }
+    }
+    .div_envolve_grid {
+        justify-content: center;
+    }
+}

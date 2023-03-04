@@ -1,0 +1,78 @@
+
+<section class="contain">
+
+    <!-- Welcome -->
+    <section class="welcome">
+        <h3>{{ 'app.home.welcome' | translate | uppercase }}</h3>
+        <div class="space_title">
+            <h1 class="header_title">{{ 'app.home.title1' | translate }}</h1>
+            <h1 class="header_title">{{ 'app.home.title2' | translate }}</h1>
+            <h1 class="header_title">{{ 'app.home.title3' | translate }}</h1>
+            <h1 class="header_title">{{ 'app.home.title4' | translate }}</h1>
+            <h1 class="header_title">{{ 'app.home.title5' | translate }}</h1>
+        </div>
+        <p class="small">{{ 'app.home.small' | translate }}</p>
+        
+        <button class="btn_types"
+                routerLink="/dashboard/websites"
+        >{{ 'app.home.types' | translate | uppercase }}</button>
+
+        <p class="text-muted">{{ 'app.home.credit_card' | translate | titlecase }}</p>
+
+    </section>
+
+    <section class="img_template">
+        <div class="">
+            <img (click)="openImageModal('imgs/person/init_img.png')" class="img_example" src="../../../assets/imgs/person/init_img.png" alt="temp">
+        </div>
+    </section>
+
+</section>
+
+<section class="maybe">
+
+    <div class="div_info">
+        <h1 class="header_title">{{ 'app.home.maybe' | translate }}</h1>
+    </div>
+
+    <p class="small">{{ 'app.home.maybe_info' | translate }}</p>
+
+</section>
+
+<section class="raise_business">
+    <div class="div_info">
+        <h1 class="header_title mb-2">{{ 'app.home.raise_business' | translate }}</h1>
+        <p class="small">{{ 'app.home.raise_business_info' | translate }}</p>
+    </div>
+    <div class="div_raise_img">
+        <img (click)="openImageModal('imgs/cartoon/raise_business.png')" 
+            class="raise_img" src="../../../assets/imgs/cartoon/raise_business.png" 
+            alt="raise" width="120px" height="150px">
+    </div>
+</section>
+<!-- <section class="personal_info">
+    <h1 class="header_title mb-2">{{ 'app.home.personal_info_title' | translate }}</h1>
+    <img (click)="openImageModal('imgs/photoLinkedln.jpeg')" class="my_photo" src="../../../assets/imgs/photoLinkedln.jpeg" alt="my_photo" width="120px" height="150px">
+    <button class="btn_my_info">{{ 'app.home.btn_info' | translate }}</button>
+
+</section> -->
+
+<section class="database_info mt-5">
+
+    <div class="div_img_DB mb-4">
+        <img class="img_db" 
+            src="../../../assets/imgs/kind-DB/portrait_DB.jpeg" 
+            (click)="openImageModal('imgs/kind-DB/portrait_DB.jpeg')" 
+            alt="db-2" width="20px" height="20px">
+    </div>
+
+    <div class="div_info">
+        <div class="headers pt-3 mb-3">
+            <h1 class="header_title">{{ 'app.home.database_title' | translate }}</h1>
+        </div>
+    
+        <p class="small mb-4">{{ 'app.home.database_info' | translate }}</p>
+    
+        <button routerLink="/dashboard/pricing" class="btn_DB">{{ 'app.home.btn_DB' | translate }}</button>
+    </div>
+</section>

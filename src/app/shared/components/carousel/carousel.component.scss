@@ -1,0 +1,94 @@
+
+
+.img {
+    min-height: 200px;
+    height: 240px;
+    // object-fit: cover;
+    width: 100vw;
+}
+
+.img:last-child {
+    margin-right: 0px;
+}
+
+.main_div {
+
+    height: 300px;
+    // padding: 0px 20px;
+    overflow: hidden;
+
+    .carousel_div {
+        display: flex;
+        // justify-content: center;
+        // height: 380px;
+        // width: 100%;
+    }
+
+    .checkBtn_div{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        width: 100vw;
+        .checkCircle{
+            border-radius: 50%;
+            border: 1px solid #000;
+            height: 15px;
+            margin-right: 20px;
+            width: 15px;
+        }
+        .checkCircle:last-child {
+            margin-right: 0px;
+        }
+        .checkCircle:hover, .checkCircle:active {
+            background-color: #fb8500;
+        }
+    }
+
+}
+
+.w-0 {
+    margin-left: 0;
+    transition: 1s;
+}
+.w-1 {
+    margin-left: -100vw;
+    transition: 1s;
+}
+.w-2 {
+    margin-left: -200vw;
+    transition: 1s;
+}
+.w-3 {
+    margin-left: -300vw;
+    transition: 1s;
+}
+.w-4 {
+    margin-left: -400vw;
+    transition: 1s;
+}
+.w-5 {
+    margin-left: -500vw;
+    transition: 1s;
+}
+.bg {
+    background-color: #fb8500;
+}
+
+@media (min-width: 720px) {
+    .main_div {
+        height: 350px !important;
+    }
+    .img {
+        height: 300px;
+    }
+}
+
+@media (min-width: 720px) {
+    .main_div {
+        height: 400px !important;
+    }
+    .img {
+        height: 340px;
+    }
+}

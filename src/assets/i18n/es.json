@@ -1,0 +1,98 @@
+{
+    "app": {
+        
+        "menu": {
+            "dashboard": "Inicio",
+            "home": "Inicio",
+            "lang": "Seleccione Lenguaje",
+            "about":"Acerca de Mi",
+            "information":"Páginas",
+            "contact":"Contacto",
+            "payment":"Métodos Pago",
+            "help":"Ayuda",
+            "help_ask": "Necesitas ayuda ?",
+            "help_answer": "Escribe y dejame saber",
+            "pricing":"Precios",
+            "plans":"Planes",
+            "websites": "Tipos Páginas Web"
+        },
+
+        "home": {
+            "contact_me": "Contáctame",
+            "welcome": "Bienvenido",
+            "title1": "Obtenga y reserve ",
+            "title2": "su sitio web ",
+            "title3": "para cualquiera de sus negocios.",
+            "title4": "Hazlo crecer",
+            "title5": "ya !!",
+            "small": "Ordena y programa tu sitio web para que vivas de la mejor forma tu mundo empresarial o comercial de tu sueño emprendedor, llegando a miles de clientes con tu iniciativa.",
+            "types": "Tipos de Sitios Web",
+            "credit_card": "Sin necesidad de tarjeta de crédito",
+            "maybe": "Sabías que ?",
+            "maybe_info": "Si trabajas duro y crees en tu negocio tendrás éxito pero una web para tu proyecto negocio no es un plus, es fundamental.",
+            "personal_info_title": "Ingeniero",
+            "raise_business": "Beneficios",
+            "raise_business_info": "Tu negocio aumentará en ingresos, calidad, transformación digital, clientes, marketing y más profesional.",
+            "btn_info": "Mas Información Desarrollador",
+            "database_title": "Necesitas una base datos para el almacén de tu negocio, aquí lo tienes !!",
+            "database_info": "Crea tu sitio web con una base de datos de tus inventarios en tiempo real y así administre su mercancía y finanzas de manera más fácil, manejable y segura.",
+            "btn_DB": "Contratar web con base datos",
+            "go_price": "Precios"
+        },
+        "websites": {
+            "header": "Tipos de Páginas Web",
+            "template": "Templates",
+            "template_subtitle": "Portadas elegantes",
+            "template_subtitle2": "Rejilla de productos",
+            "template_info": "Hermosos sitios web que anuncian su negocio, tienen un gran diseño que se ve muy atractivo. Usted publica toda la información que desea sobre su trabajo o negocio. No tiene base de datos y API como requerimiento. Con respecto a la complejidad del código de programación, es lo más accesible.",
+            "btn_template": "Contratar Template",
+            "database": "Web con base datos",
+            "database_subtitle": "Almacén con base de datos",
+            "database_info": "Proyecto web donde podrás mostrar toda tu mercancía y leerla, guardarla, actualizarla y borrarla en tiempo real. Ejemplos como usuarios que desea que se autentiquen en su aplicación, productos, categorías y más artículos de su almacén. Mantendrás todo tu contenido digital y guardado, y no más papel para todos tus inventarios. También puede tener diferentes personas autenticadas con roles en su aplicación como administrador, usuario, superusuario, gerente, economista...",
+            "btn_database": "Contratar Web con Base Datos",
+            "big_projects": "Proyectos Grandes",
+            "big_projects_subtitle": "Aplicaciones Web Completas",
+            "big_projects_info": "Aplicaciones web completas con base de datos, excelente diseño receptivo y procesamiento dinámico de gran cantidad de API y transferencia de información. Incluye complejidad en el código de programación, así como en backend y frontend.",
+            "btn_big_projects": "Contratar Proyecto Completo"
+
+        },
+        "contact" : {
+            "title": "Contáctame",
+            "email": "Correo",
+            "phone": "Celular",
+            "linkedin": "LinkedIn",
+            "engineer": "Ingeniero en Telecomunicaciones",
+            "web_developer": "Desarrollador Web"
+        },
+        "pricing": {
+            "header": "Precios",
+            "Name": "Nombre",
+            "Complexity": "Complejidad",
+            "Cost": "Costo",
+            "btn_buy": "Comprar Ahora",
+            "low": "Bajo",
+            "medium": "Medio",
+            "high": "Alto",
+            "p_first":"$200 - 400",
+            "p_second":"$400 - 1000",
+            "p_third":"$1000 - ?"
+        },
+        "payment": {
+            "credit_card": "Tarjeta Banco",
+            "BTC": "BTC",
+            "ETH": "ETH",
+            "TRC20": "TRC20",
+            "paypal": "Paypal",
+            "BTC_address": "36pQrE2cSwoNhFswwtBeVJn5Nm4e8V5Yoe",
+            "ETH_address": "0x5d93084ae328726e4aa77cb6eb60c8f58c255803",
+            "TRC20_address": "TN3ifZdSLYnpCfaj93Z36Wy8FYv524ngZ6",
+            "paypal_address": "https://paypal.me/onier0217?country.x=US&locale.x=en_US",
+            "my_email": "onier0217@gmail.com",
+            "cash": "Efectivo",
+            "cypto_info": "Dirección a donde enviarás:",
+            "presence": "Presencia",
+            "presence_info": "Nos vemos en persona"
+
+        }
+    }
+}

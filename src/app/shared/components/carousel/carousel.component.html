@@ -1,0 +1,22 @@
+
+<!-- [style]="widthMainDiv" -->
+<div class="main_div" id="slide">
+
+    <div class="carousel_div" [style]="widthMainDiv">
+
+        <img *ngFor="let img of dataImages, let i = index"
+            [src]="img.path"
+            [id]="i"
+            class="img" [alt]="i+1">
+
+    </div>
+
+    <div class="checkBtn_div">
+        <div *ngFor="let item of arrChecks" 
+            class="checkCircle"
+            [id]="'circle_' + item.toString()"
+            (click)="moveSlider(item)"
+        ></div>
+    </div>
+
+</div>

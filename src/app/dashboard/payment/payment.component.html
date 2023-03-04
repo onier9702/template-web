@@ -1,0 +1,43 @@
+
+
+<main class="main_div">
+
+    <section class="background mb-5">
+        <h1 class="header_title">{{ 'app.menu.payment' | translate }}</h1> 
+    </section>
+
+    <div class="div_envolve_grid">
+        <section class="grid_icons">
+            <!-- <h3>Different Methods</h3> -->
+            <div (click)="openInfoPayment(0)" class="grid">
+                <i class="fa-brands fa-bitcoin icon" style="color: #ffc300;"></i>
+                <h6>Bitcoin</h6>
+            </div>
+    
+            <div (click)="openInfoPayment(1)" class="grid">
+                <i class="fa-brands fa-ethereum icon" style="color: #003049;"></i>
+                <h6>Ethereum</h6>
+            </div>
+    
+            <div (click)="openInfoPayment(2)" class="grid">
+                <img style="width: 60px; height: 80px; padding-top: 10px;" src="../../../assets/imgs/payment/TRC20.png" width="80px" height="80px" alt="trc20">
+                <h6>TRC20</h6>
+            </div>
+    
+            <div (click)="openInfoPayment(3)" class="grid">
+                <i class="fa-solid fa-sack-dollar icon" style="color: #588157;"></i>
+                <h6>{{ 'app.payment.cash' | translate | titlecase }}</h6>
+            </div>
+    
+            <div (click)="openInfoPayment(4)" class="grid">
+                <i class="fa-solid fa-credit-card icon"></i>
+                <h6>{{ 'app.payment.credit_card' | translate | titlecase }}</h6>
+            </div>
+            <div (click)="openInfoPayment(5)" class="grid">
+                <i class="fa-brands fa-paypal icon" style="color: #03045e;"></i>
+                <h6>Paypal</h6>
+            </div>
+        </section>
+    </div>
+
+</main>

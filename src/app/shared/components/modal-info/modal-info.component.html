@@ -1,0 +1,12 @@
+
+
+<div class="main_div">
+    <div class="close_div">
+        <i class="bi bi-x-square" id="btn_close" (click)="closePopUp()"></i>
+    </div>
+    <h2 *ngIf="data.title">{{ data.title | translate | uppercase}}</h2>
+    <h3 *ngIf="data.subtitle">{{ data.subtitle | translate}}</h3>
+    <h5>{{ data.text | translate }}</h5>
+    <h2 *ngIf="data.price" class="price">{{ data.price | translate }}</h2>
+</div>
+

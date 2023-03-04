@@ -1,0 +1,75 @@
+
+
+<header class="d-flex justify-content-center">
+    <h1 class="header_title mt-5 mb-5">{{ 'app.websites.header' | translate }}</h1>
+</header>
+
+<main class="main_div">
+    
+    <div class="templates mb-5">
+        <h2 class="header_subtitle mb-3">1.  {{ 'app.websites.template' | translate }}</h2>
+        <p class="small">{{ 'app.websites.template_info' | translate }}</p>
+
+        <section class="first">
+
+            <h5 style="font-weight: 400;">1.1 {{ 'app.websites.template_subtitle' | translate }}</h5>
+            <img (click)="openImageModal('imgs/websites/template-1_4.png')" class="img_mobile mb-4" src="../../../assets/imgs/websites/template-1_4.png" width="200px" height="90px" alt="tem-1">
+
+            <h5 style="font-weight: 400;">1.2 {{ 'app.websites.template_subtitle2' | translate }} </h5>
+            <div class="grid_templates">
+                <img *ngFor="let img of imagesService.images1, let i = index" 
+                    class="temp_img" 
+                    [src]="img.fullPath"
+                    (click)="openImageModal(img.path)"  
+                    alt="{{ 'temp_' + i }}">
+            </div>
+
+        </section>
+
+        <button routerLink="/dashboard/pricing" 
+                class="btn_large">{{ 'app.websites.btn_template' | translate  }}</button>
+
+    </div>
+
+    <div class="database mb-5">
+        <h2 class="header_subtitle mb-3">2.  {{ 'app.websites.database' | translate }}</h2>
+        <p class="small">{{ 'app.websites.database_info' | translate }}</p>
+
+        <section class="second">
+            <h5 style="font-weight: 400;">2.1  {{ 'app.websites.database_subtitle' | translate }}</h5>
+
+            <div class="grid_database">
+                <img *ngFor="let img of imagesService.images2, let i = index" 
+                    class="temp_img1" 
+                    [src]="img.fullPath"
+                    (click)="openImageModal(img.path)"  
+                    alt="{{ 'temp_' + i }}">
+               
+            </div>
+
+        </section>
+
+        <button routerLink="/dashboard/pricing" 
+                class="btn_large">{{ 'app.websites.btn_database' | translate  }}</button>
+    </div>
+
+    <div class="big_projects mb-5">
+
+        <h2 class="header_subtitle mb-3">3.  {{ 'app.websites.big_projects' | translate }}</h2>
+        <p class="small">{{ 'app.websites.big_projects_info' | translate }}</p>
+    
+        <section class="third">
+            <h5 style="font-weight: 400;">3.1  {{ 'app.websites.big_projects_subtitle' | translate }}</h5>
+
+            <div class="grid_big_projects">
+                
+            </div>
+
+        </section>
+    
+        <button routerLink="/dashboard/pricing" 
+                class="btn_large">{{ 'app.websites.btn_big_projects' | translate  }}</button>
+
+    </div>
+
+</main>

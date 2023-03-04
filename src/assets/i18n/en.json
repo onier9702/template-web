@@ -1,0 +1,98 @@
+{
+    "app": {
+
+        "menu": {
+            "dashboard": "Dashboard",
+            "home": "Home",
+            "lang": "Choose Language",
+            "about":"About Me",
+            "information":"Pages",
+            "contact":"Contact",
+            "payment":"Payment Methods",
+            "help":"Help",
+            "help_ask": "Do you need help ?",
+            "help_answer": "Chat with me and let me know",
+            "pricing":"Pricing",
+            "plans":"Plans",
+            "websites": "Kind Websites"
+        },
+        
+        "home": {
+            "contact_me": "Contact Me",
+            "welcome": "Welcome",
+            "title1": "Get and reserve", 
+            "title2": "your website",
+            "title3": "for any of your business.",
+            "title4" :"Make it",
+            "title5" :"grow now !!",
+            "small": "Order and schedule your website so that you can live the business or commercial world of your entrepreneurial dream in the best way, reaching thousands of customers with your initiative.",
+            "types": "Kind of Websites",
+            "credit_card": "No need credit card",
+            "maybe": "Did you Know ?",
+            "maybe_info": "If you work hard and believe in your business you will succeed but a website for your business project is not a plus, it is fundamental.",
+            "personal_info_title": "Engineer",
+            "raise_business": "Benefits",
+            "raise_business_info": "Your business will increase in income, quality, digital transformation, customers, marketing and it will be more professional.",
+            "btn_info": "More Developer Info",
+            "database_title": "Need a database for your business warehouses, here it is !!",
+            "database_info": "Get your website with a database of your inventories in real time and so manage your merchandise and finances more easily, manageable and secure.",
+            "btn_DB": "Hire my web database",
+            "go_price": "Pricing"
+        },
+        "websites": {
+            "header": "Kind of Websites",
+            "template": "Templates",
+            "template_subtitle": "Beautiful portraits",
+            "template_subtitle2": "Grid of products",
+            "template_info": "Beautiful websites that advertise your business, have a great design that looks very atractive. You post all the information you want about your work or business. It does not have database and API as requierement. With respect to programming code complexity, it is the most approachable and cheaper.",
+            "btn_template": "Hire Template",
+            "database": "Web with Database",
+            "database_subtitle": "Wharehouse with Database",
+            "database_info": "Web project where you can show all your merchandise and read, save, update and delete it in real time. Examples like users you want to authenticate to your app, products, categories, and more items in your store. You'll keep all your digital and saved content, and no more paper for all your inventory. You can also have different authenticated people with roles in your application like administrator, user, superuser, manager, economist...",
+            "btn_database": "Hire Web Database",
+            "big_projects": "Big Projects",
+            "big_projects_subtitle": "Full Web Applications",
+            "big_projects_info": "Full web applications with database, excellent responsive design and a dynamic processing of large number of APIs and information transfer. It includes complexity in programming code as well as in backend and frontend.",
+            "btn_big_projects": "Hire Big Project"
+
+        },
+        "contact" : {
+            "title": "Contact Me",
+            "email": "Email",
+            "phone": "Telephone",
+            "linkedin": "LinkedIn",
+            "engineer": "Telecommunications Engineer",
+            "web_developer": "Web Developer"
+        },
+        "pricing": {
+            "header": "Prices",
+            "Name": "Name",
+            "Complexity": "Complexity",
+            "Cost": "Cost",
+            "btn_buy": "Buy Now",
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High",
+            "p_first":"$200 - 400",
+            "p_second":"$400 - 1000",
+            "p_third":"$1000 - ?"
+        },
+        "payment": {
+            "credit_card": "Credit Card",
+            "credit_card_info": "Not Credit Card yet",
+            "cash": "Cash",
+            "BTC": "BTC",
+            "ETH": "ETH",
+            "TRC20": "TRC20",
+            "paypal": "Paypal",
+            "BTC_address": "36pQrE2cSwoNhFswwtBeVJn5Nm4e8V5Yoe",
+            "ETH_address": "0x5d93084ae328726e4aa77cb6eb60c8f58c255803",
+            "TRC20_address": "TN3ifZdSLYnpCfaj93Z36Wy8FYv524ngZ6",
+            "paypal_address": "https://paypal.me/onier0217?country.x=US&locale.x=en_US",
+            "my_email": "onier0217@gmail.com",
+            "cypto_info": "Address you will send:",
+            "presence": "Presence",
+            "presence_info": "We see each other in person"
+        }
+    }
+}

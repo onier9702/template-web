@@ -1,0 +1,37 @@
+
+<div class="div p-2">
+
+    <div class="contact_me">
+        <button class="btn_contact"
+            routerLink="/dashboard/contact"
+        >{{ 'app.home.contact_me' | translate }}</button>
+    </div>
+
+    <div *ngIf="false" class="d-flex justify-content-center align-items-center logo">
+        <h4>LOGO</h4>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center language">
+        <span [class]="currentFlag" (click)="changeLanguage()"></span>            
+        <i class="bi bi-list btn_menu" (click)="openMenuNavbar()"></i>
+    </div>
+
+</div>
+
+<nav class="modal_navigation" id="show">
+
+    <div class="d-flex flex-column ml-2 mt-2">
+        <i class="bi bi-x-square" id="btn_close" (click)="closeMenuNavbar()"></i>
+    </div>
+    
+    <ul class="items">
+        <div *ngFor="let item of menu"
+            class="item"
+            [routerLink]="item.url"
+            routerLinkActive="active"
+            (click)="closeMenuNavbar()">
+            <li >{{item.title | translate}}</li>
+        </div>
+
+    </ul>
+</nav>
