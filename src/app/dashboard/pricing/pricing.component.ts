@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataEnum, InfoService } from '../services/info.service';
+import { MenuService } from '../../shared/services/menu.service';
 
 interface Table {
   name: string;
@@ -33,7 +34,10 @@ export class PricingComponent implements OnInit {
   ]
   public widthVariable: string = `width: ${this.arrCarouselImagesTemplate.length * 100}vw`;
 
-  constructor(private infoService: InfoService) { }
+  constructor(
+    private infoService: InfoService,
+    public menuService: MenuService
+  ) { }
 
   ngOnInit(): void {
   }

@@ -1,23 +1,27 @@
 
-<header class="d-flex justify-content-center">
-    <!-- <h1 class="header_title mt-5 mb-5">{{ 'app.contact.title' | translate }}</h1> -->
-    <h1 class="header_title mt-5 mb-5">{{ 'app.menu.help' | translate }}</h1>
-</header>
+<div (click)="menuService.closeNavBarStatus('no-certain')">
 
-<main>
-
-    <section class="help">
-        <h4>{{ 'app.menu.help_ask' | translate }}</h4>
-        <h6>{{ 'app.menu.help_answer' | translate }}</h6>
-
-        <section class="btn_whatsapp">
-            <div class="cuadro">
-                <a href="https://wa.me/message/UYJLE22XHH7UP1" target="_blank"><i class="bi bi-whatsapp" id="icon-whatsapp"></i></a>
-            </div>
+    <header class="d-flex justify-content-center">
+        <!-- <h1 class="header_title mt-5 mb-5">{{ 'app.contact.title' | translate }}</h1> -->
+        <h1 class="header_title mt-5 mb-5">{{ 'app.menu.help' | translate }}</h1>
+    </header>
+    
+    <main>
+    
+        <section class="help">
+            <h4>{{ 'app.menu.help_ask' | translate }}</h4>
+            <h6>{{ 'app.menu.help_answer' | translate }}</h6>
+    
+            <section class="btn_whatsapp">
+                <div class="cuadro">
+                    <a href="https://wa.me/message/UYJLE22XHH7UP1" target="_blank"><i class="bi bi-whatsapp" id="icon-whatsapp"></i></a>
+                </div>
+            </section>
         </section>
-    </section>
-    <section class="video">
-        <!-- <img src="../../../assets/imgs/person/video.mp4" width="100px" height="100px" alt="video"> -->
-        <video class="video_mp4" controls autoplay preload="auto" src="../../../assets/imgs/person/video.mp4" type="video/mp4"></video>
-    </section>
-</main>
+        <section class="video">
+            <!-- <img src="../../../assets/imgs/person/video.mp4" width="100px" height="100px" alt="video"> -->
+            <video class="video_mp4" controls autoplay preload="auto" src="../../../assets/imgs/person/video.mp4" type="video/mp4"></video>
+        </section>
+    </main>
+
+</div>

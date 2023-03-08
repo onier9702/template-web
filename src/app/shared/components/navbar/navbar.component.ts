@@ -23,6 +23,13 @@ export class NavbarComponent implements OnInit {
     ) {
       const lang: string = localStorage.getItem('my_web_language') || 'en';
       this.currentFlag = ( lang === 'en' ) ? 'fi fi-us' : 'fi fi-ea';
+
+      // listening change of navbar status on menuService
+      menuService.newValue.subscribe( value => {
+        console.log({value});
+        (value) ? this.setExitClassMove('close') : this.setExitClassMove('open');
+      })
+      
     }
 
   ngOnInit(): void {
@@ -40,12 +47,12 @@ export class NavbarComponent implements OnInit {
   }
 
   openMenuNavbar() {
-    this.setExitClassMove('open');
+    this.menuService.openNavbarStatus();
   }
 
-  closeMenuNavbar() {
-    this.setExitClassMove('close');
-  }
+  // closeMenuNavbar() {
+  //   this.setExitClassMove('close');
+  // }
 
   changeLanguage() {
 

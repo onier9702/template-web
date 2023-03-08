@@ -21,7 +21,7 @@
 <nav class="modal_navigation" id="show">
 
     <div class="d-flex flex-column ml-2 mt-2">
-        <i class="bi bi-x-square" id="btn_close" (click)="closeMenuNavbar()"></i>
+        <i class="bi bi-x-square" id="btn_close" (click)="menuService.closeNavBarStatus('certain')"></i>
     </div>
     
     <ul class="items">
@@ -29,7 +29,7 @@
             class="item"
             [routerLink]="item.url"
             routerLinkActive="active"
-            (click)="closeMenuNavbar()">
+            (click)="menuService.closeNavBarStatus('certain')">
             <li >{{item.title | translate}}</li>
         </div>
 

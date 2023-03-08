@@ -81,7 +81,7 @@ export class ImagesService {
       }
     } );
 
-    dialogRef.updatePosition({ top: '100px' });
+    dialogRef.updatePosition({ top: '50px' });
     // dialogRef.afterClosed().subscribe( resp => {
     //   if ( resp ) { 
         

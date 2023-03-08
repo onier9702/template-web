@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
+  
+  public condition!: any; // navbar is close, in true navbar is open
+  public newValue: BehaviorSubject<boolean> = new BehaviorSubject(this.condition);
 
   constructor() { }
-
-  // public isContactPage: boolean = false;
  
   public flags: string[] = [
     "fi fi-us", "fi fi-ea"
@@ -41,6 +43,20 @@ export class MenuService {
     }
         
   ];
+
+  public closeNavBarStatus(controlVariable: string) {
+    if (controlVariable === 'certain' || this.condition) {
+      this.newValue.next(true);
+      setTimeout(() => {
+        this.condition = false;
+      }, 300);
+    }
+  }
+
+  public openNavbarStatus() {
+    this.condition = true;
+    this.newValue.next(false);
+  }
 
 
 

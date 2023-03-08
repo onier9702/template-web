@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataEnum, InfoService } from '../services/info.service';
+import { MenuService } from '../../shared/services/menu.service';
 
 @Component({
   selector: 'app-payment',
@@ -8,7 +9,10 @@ import { DataEnum, InfoService } from '../services/info.service';
 })
 export class PaymentComponent implements OnInit {
 
-  constructor(private infoSevice: InfoService) { }
+  constructor(
+    private infoSevice: InfoService,
+    public menuService: MenuService
+  ) { }
 
   ngOnInit(): void {
   }

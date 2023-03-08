@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImagesService } from '../services/images.service';
+import { MenuService } from '../../shared/services/menu.service';
 
 
 
@@ -12,7 +13,8 @@ import { ImagesService } from '../services/images.service';
 export class WebsitesComponent implements OnInit {
 
   constructor( 
-    public imagesService: ImagesService
+    public imagesService: ImagesService,
+    public menuService: MenuService
   ) { }
 
   ngOnInit(): void {

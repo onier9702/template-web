@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImagesService } from '../services/images.service';
+import { MenuService } from '../../shared/services/menu.service';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +10,14 @@ import { ImagesService } from '../services/images.service';
 export class HomeComponent implements OnInit {
 
   constructor(
-    public imagesService: ImagesService
+    public imagesService: ImagesService,
+    public menuService: MenuService
   ) { }
 
   ngOnInit(): void {
   }
 
   public openImageModal( path: string ) {
-    console.log('passing test: ', path);
     this.imagesService.openImageModalOnService( path );
   }
 

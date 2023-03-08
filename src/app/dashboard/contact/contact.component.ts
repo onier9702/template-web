@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { MenuService } from '../../shared/services/menu.service';
+import { MenuService } from '../../shared/services/menu.service';
 import { ImagesService } from '../services/images.service';
 
 interface MyData {
@@ -21,10 +21,9 @@ export class ContactComponent implements OnInit {
   ]
 
   constructor(
-    public imagesService: ImagesService
-  ) {
-    // this.menuService.isContactPage = true;
-  }
+    public imagesService: ImagesService,
+    public menuService: MenuService
+  ) {}
 
   ngOnInit(): void {
   }
