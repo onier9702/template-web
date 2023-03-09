@@ -18,27 +18,32 @@ export class MenuService {
   public menu: any[] = [
     {
       title: 'app.menu.home',
-      icon: 'mdi mdi-gauge',
+      icon: 'bi bi-house-check-fill',
+      color: 'color: #00b4d8; margin-right: 10px', 
       url: '/dashboard/home'
     },
     {
       title: 'app.menu.websites',
-      icon: 'mdi mdi-folder-lock-open',
+      icon: 'bi bi-globe2',
+      color: 'color: #00b4d8; margin-right: 10px',
       url: '/dashboard/websites'
     },
     {
       title: 'app.menu.pricing',
-      icon: 'mdi mdi-folder-lock-open',
+      icon: 'bi bi-coin',
+      color: 'color: #00b4d8; margin-right: 10px',
       url: '/dashboard/pricing'
     },
     {
       title: 'app.menu.payment',
-      icon: 'mdi mdi-folder-lock-open',
+      icon: 'bi bi-wallet-fill',
+      color: 'color: #00b4d8; margin-right: 10px',
       url: '/dashboard/payment'
     },
     {
       title: 'app.menu.help',
-      icon: 'mdi mdi-folder-lock-open',
+      icon: 'bi bi-question-circle-fill',
+      color: 'color: #00b4d8; margin-right: 10px',
       url: '/dashboard/help'
     }
         

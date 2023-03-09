@@ -25,12 +25,13 @@
     </div>
     
     <ul class="items">
-        <div *ngFor="let item of menu"
+        <div *ngFor="let item of menu, let i = index"
             class="item"
             [routerLink]="item.url"
             routerLinkActive="active"
             (click)="menuService.closeNavBarStatus('certain')">
-            <li >{{item.title | translate}}</li>
+            <i [style]="item.color" [class]="item.icon"></i>
+            <li >{{item.title | translate | uppercase}}</li>
         </div>
 
     </ul>
